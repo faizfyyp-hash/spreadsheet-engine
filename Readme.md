@@ -1,5 +1,3 @@
-# \# Spreadsheet Engine with Formula Evaluation
-
 ## Bonus Features Implemented
 
 - Formula bar
@@ -9,6 +7,8 @@
 - Local storage persistence
 - Spreadsheet-style formula editing
 - Error highlighting
+
+# \# Spreadsheet Engine with Formula Evaluation
 
 # 
 
