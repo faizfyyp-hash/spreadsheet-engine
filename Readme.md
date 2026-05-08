@@ -1,5 +1,15 @@
 # \# Spreadsheet Engine with Formula Evaluation
 
+## Bonus Features Implemented
+
+- Formula bar
+- Undo / Redo
+- Dynamic row addition
+- Dynamic column addition
+- Local storage persistence
+- Spreadsheet-style formula editing
+- Error highlighting
+
 # 
 
 # A React-based 10×10 spreadsheet grid with formula evaluation, dependency updates, and circular reference detection.

@@ -42,7 +42,84 @@ th {
   height: 40px;
 }
 
-input {
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: white;
+  color: black;
+}
+
+.container {
+  width: fit-content;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.toolbar {
+  margin-bottom: 12px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.formula-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  border: 1px solid #999;
+  width: fit-content;
+}
+
+.cell-name {
+  padding: 8px 12px;
+  background: #f0f0f0;
+  border-right: 1px solid #999;
+  min-width: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fx {
+  padding: 8px 12px;
+  border-right: 1px solid #999;
+  font-weight: bold;
+}
+
+.formula-bar input {
+  width: 420px;
+  height: 34px;
+  border: none;
+  padding-left: 10px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.formula-bar input:focus {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+
+th {
+  background-color: #f0f0f0;
+  width: 70px;
+  height: 40px;
+}
+
+td input {
   width: 70px;
   height: 40px;
   border: none;
@@ -50,8 +127,12 @@ input {
   font-size: 15px;
 }
 
-input:focus {
+td input:focus {
   outline: 2px solid blue;
+}
+
+.selected {
+  background-color: #eef5ff;
 }
 
 .error {
