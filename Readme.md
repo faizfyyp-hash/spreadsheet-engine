@@ -1,3 +1,21 @@
+
+# Spreadsheet Engine with Formula Evaluation
+
+A React-based spreadsheet grid with formula evaluation, dependency updates, circular reference detection, and bonus spreadsheet features.
+
+## Features
+
+- Editable spreadsheet grid
+- Columns A–J and rows 1–10 by default
+- Direct numeric and text entry
+- Formula support using `=`
+- Cell references like `A1`, `B2`, `J10`
+- Arithmetic support: `+`, `-`, `*`, `/`
+- Parentheses support
+- Automatic recalculation when referenced cells change
+- Circular reference detection
+- Invalid formula error handling
+
 ## Bonus Features Implemented
 
 - Formula bar
@@ -8,101 +26,35 @@
 - Spreadsheet-style formula editing
 - Error highlighting
 
-# \# Spreadsheet Engine with Formula Evaluation
+## Examples
 
-# 
+A1 = 5  
+B1 = =A1+3  
+C1 = =B1*2
 
-# A React-based 10×10 spreadsheet grid with formula evaluation, dependency updates, and circular reference detection.
+Output:
 
-# 
+B1 = 8  
+C1 = 16
 
-# \## Features
+Circular reference example:
 
-# 
+A2 = =B2  
+B2 = =A2
 
-# \- 10×10 editable spreadsheet grid
+Output:
 
-# \- Columns A–J and rows 1–10
+#CIRCULAR
 
-# \- Direct numeric and text entry
+Invalid formula example:
 
-# \- Formula support using `=`
+C3 = =A1+
 
-# \- Cell references like `A1`, `B2`, `J10`
+Output:
 
-# \- Arithmetic support: `+`, `-`, `\*`, `/`
+#ERROR
 
-# \- Parentheses support
+## Installation
 
-# \- Automatic recalculation when referenced cells change
-
-# \- Circular reference detection
-
-# \- Invalid formula error handling
-
-# 
-
-# \## Examples
-
-# 
-
-# A1 = 5  
-
-# B1 = =A1+3  
-
-# C1 = =B1\*2
-
-# 
-
-# Output:
-
-# 
-
-# B1 = 8  
-
-# C1 = 16
-
-# 
-
-# Circular reference example:
-
-# 
-
-# A2 = =B2  
-
-# B2 = =A2
-
-# 
-
-# Output:
-
-# 
-
-# \#CIRCULAR
-
-# 
-
-# Invalid formula example:
-
-# 
-
-# C3 = =A1+
-
-# 
-
-# Output:
-
-# 
-
-# \#ERROR
-
-# 
-
-# \## Installation
-
-# 
-
-# ```bash
-
-# npm install
-
+```bash
+npm install
