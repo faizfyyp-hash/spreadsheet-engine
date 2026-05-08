@@ -1,0 +1,61 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.container {
+  width: fit-content;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.container {
+  width: fit-content;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+
+th {
+  background-color: #f0f0f0;
+  width: 70px;
+  height: 40px;
+}
+
+input {
+  width: 70px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 2px solid blue;
+}
+
+.error {
+  background-color: #ffd6d6;
+  color: red;
+  font-weight: bold;
+}
